@@ -1,0 +1,70 @@
+version: '3'
+
+services:
+  numbers-php-fpm:
+    build:
+      context: ./php-fpm
+    volumes:
+      - ../src:/var/www
+    links:
+      - numbers-database-legal-1
+      - numbers-database-legal-2
+      - numbers-database-legal-3
+
+  numbers-php-cli:
+    build:
+      context: ./php-cli
+    volumes:
+      - ../:/var/www
+    stdin_open: true
+    tty: true
+    links:
+      - numbers-database-legal-1
+      - numbers-database-legal-2
+      - numbers-database-legal-3
+
+  numbers-nginx:
+    build:
+      context: ./nginx
+    volumes:
+      - ../src:/var/www
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/sites/:/etc/nginx/sites-available
+      - ./nginx/conf.d/:/etc/nginx/conf.d
+    ports:
+      - "80:80"
+    depends_on:
+      - numbers-php-fpm
+
+  numbers-database-legal-1:
+    build:
+      context: ./database
+    environment:
+      - MYSQL_DATABASE=db_numbers
+      - MYSQL_USER=db_crm
+      - MYSQL_PASSWORD=db_password
+      - MYSQL_ROOT_PASSWORD=docker
+    volumes:
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
+
+  numbers-database-legal-2:
+    build:
+      context: ./database
+    environment:
+      - MYSQL_DATABASE=db_numbers
+      - MYSQL_USER=db_crm
+      - MYSQL_PASSWORD=db_password
+      - MYSQL_ROOT_PASSWORD=docker
+    volumes:
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
+
+  numbers-database-legal-3:
+    build:
+      context: ./database
+    environment:
+      - MYSQL_DATABASE=db_numbers
+      - MYSQL_USER=db_crm
+      - MYSQL_PASSWORD=db_password
+      - MYSQL_ROOT_PASSWORD=docker
+    volumes:
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql

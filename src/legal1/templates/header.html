@@ -1,0 +1,268 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+	<script language='JavaScript' type='text/javascript' src='js/scripts.js'>
+	</script>
+	<script language='JavaScript' type='text/javascript'>
+		 function onLoad()
+            {
+				iedetect = true;
+				elem = document.getElementById("high");
+				if(elem)
+				{
+					children = elem.getElementsByTagName("tr");
+					if(document.addEventListener)
+					{
+						function overColor()
+						{	
+							this.style.backgroundColor = "#ffff99";
+						}
+						function outColor()
+						{
+							this.style.backgroundColor = "white";
+						}
+						for(i=0;i<children.length; i++)
+						{
+							children[i].addEventListener("mouseover",overColor, true);
+							children[i].addEventListener("mouseout",outColor, true);
+						}
+						
+					}
+					else
+					{
+						for(i=0;i<children.length; i++)
+						{
+							children[i].onmouseover = function(){this.style.backgroundColor = "#ffff99";}
+							children[i].onmouseout = function(){this.style.backgroundColor = "white";}
+						}
+					}
+				}
+            }
+-->
+	</script>
+	<style type='text/css'>		  
+			body
+			{
+				font-family:Arial, Helvetica, sans-serif;
+			}
+		   .head
+		   {
+		   	background-image:url("images/bg.jpg");
+			background-repeat:repeat-x;
+		   }
+		   .headmiddle
+		   {
+		   	background-image:url("images/headmiddle.jpg");
+			background-repeat:repeat-x;
+		   }
+		   .headp
+		   {
+			font-size: 105%;
+			
+		   }
+		   .headv
+		   {
+			font-size: 115%;
+			background-color:#e6e3e3;
+		   }
+		   a
+		   {
+			text-decoration:none;
+		   }
+		   a.menu
+		   {
+			display:block;
+		   }
+		   a.menu:hover
+		   {
+			background-color:#ffccff;
+			border:1px dashed gray;
+		   }
+		   li
+		   {
+			list-style:none;
+		   }
+		   .info
+		   {
+			border:1px solid gray;
+			
+		   }
+		   th
+		   {
+			border:1px solid gray;
+			background-color:#e6e3e3;
+		   }
+		   .cells
+		   {
+		   border:1px solid gray;
+		   background-color:white;
+		   }
+		   .cell
+		   {
+			 border:1px solid gray;
+		   }
+		   a.navigation:hover
+		   {
+			color:red;
+		   }
+		   a.rel
+		   {
+			color:white;
+		   }
+		   a.rel:visited
+		   {
+			color:white;
+		   }
+		   a.rel:active
+		   {
+			color:white
+		   }
+           table.calendar
+           {
+             border:1px solid white;
+             background-color:silver;
+           }
+           table.calendar th
+           {
+            background-color: white;
+           }
+           table.calendar td
+           {
+            background-color: white;
+           }
+           table.calendar td a
+           {
+            display:block;
+           }
+           table.calendar td a:hover
+           {
+            border:1px solid black;
+           }
+	</style>
+</head>
+<body onLoad='onLoad()'>
+ <table width='100%' border='0' cellspacing='1' cellpadding='0'>
+ 		<tr>
+		 <td colspan='4'>
+		  <table width='100%' border='0' cellspacing='0' cellpadding='5'>
+		   <tr>
+		    <td class='head' colspan=5>
+		 	 <h2><font color='white'><?=$_SESSION['legal1']['name']?>(<?=$_SESSION['legal1']['org']?>)<br>Номера для юридического лица 1</font></h2>
+		    </td>
+		   </tr>
+		   <tr>
+		    <td class='headmiddle' width='5%'>
+		    </td>
+		    <td class='headmiddle' width='30%'>
+		     <div style='display:block;background-color:white;'>
+		    	&nbsp;&nbsp;Администраторская часть
+		     </div>
+		    </td>
+		    <td class='headmiddle' width='50%'>
+		    </td>
+		    <td width='10%' class='headmiddle'>
+			<a href='index.php?action=logout'>
+		 	 <div style="display:block;background-color:white;">
+			 &nbsp;&nbsp;Выход
+			 </div>
+			 </a>
+		    </td>
+		    <td width='5%' class='headmiddle'>
+		    </td>
+		   </tr>
+	     </table>
+		</td>
+	   </tr>
+	   <tr>
+	   <td colspan='3'></td>
+	   </tr>
+		<tr>
+		 <td valign='top' width='20%'style='background-color:white;border:1px solid gray'>
+		  <table width='100%' >
+		    <tr>
+			 <td style='font-size:125%;'>
+			  Меню
+			 </td>
+			</tr>
+			<tr>
+			  <td>
+                <table width='100%'>
+                    <tr>
+                        <td width='100%'>
+                            <a class='menu' href="http://<?=$_SERVER["HTTP_HOST"]?>/legal1/admin.php?module=users&action=users_show">
+                                -&nbsp;Управление пользователями
+                            </a>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td>
+                                <a  class='menu' href="http://<?=$_SERVER["HTTP_HOST"]?>/legal1/admin.php?module=reserve">
+                                    -&nbsp;Пользователь Резерв
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                +&nbsp;Настройки приложения
+                                <a class='menu' href='http://<?=$_SERVER["HTTP_HOST"]?>/legal1/admin.php?module=setup'>
+                                    &nbsp;&nbsp;-&nbsp;Документы<br>
+                                </a>
+                                <a class='menu' href='http://<?=$_SERVER["HTTP_HOST"]?>/legal1/admin.php?module=setup&action=waybill'>
+                                    &nbsp;&nbsp;-&nbsp;Договор<br>
+                                </a>
+                                <a class='menu' href='http://<?=$_SERVER["HTTP_HOST"]?>/legal1/admin.php?module=reserve&action=daily'>
+                                    &nbsp;&nbsp;-&nbsp;Резервирование номеров на документы<br>
+                    </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                +&nbsp;Получение номера
+                                <a class='menu' href='http://<?=$_SERVER["HTTP_HOST"]?>/legal1/admin.php?module=number&action=document'>
+                                    &nbsp;&nbsp;-&nbsp;Документ<br>
+                                </a>
+                                <a class='menu' href='http://<?=$_SERVER["HTTP_HOST"]?>/legal1/admin.php?module=number&action=waybill'>
+                                    &nbsp;&nbsp;-&nbsp;Договор<br>
+                                </a>
+                                <a class='menu' href='http://<?=$_SERVER["HTTP_HOST"]?>/legal1/admin.php?module=future'>
+                                    &nbsp;&nbsp;-&nbsp;Резерв<br>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                +&nbsp;Отчет по всем номерам
+                                <a class='menu' href='http://<?=$_SERVER["HTTP_HOST"]?>/legal1/admin.php?module=report'>
+                                    &nbsp;&nbsp;-&nbsp;Документы<br>
+                                </a>
+                                <a class='menu' href='http://<?=$_SERVER["HTTP_HOST"]?>/legal1/admin.php?module=report&action=waybill'>
+                                    &nbsp;&nbsp;-&nbsp;Договор<br>
+                                </a>
+                                <a class='menu' href='http://<?=$_SERVER["HTTP_HOST"]?>/legal1/admin.php?module=future&action=show'>
+                                    &nbsp;&nbsp;-&nbsp;Резерв<br>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                +&nbsp;Архив номеров
+                                <?php #22 июля добавил?>
+                                <a class='menu' href='http://<?=$_SERVER["HTTP_HOST"]?>/legal1/admin.php?module=archive'>
+                                    &nbsp;&nbsp;-&nbsp;Поиск<br>
+                                </a>
+                                <?php #22 июля добавил?>
+
+                            </td>
+                        </tr>
+                    </table>
+			  </td>
+	        </tr>
+		  </table>
+	   </td>
+	   <td valign='top'>
+	   &nbsp;
+	   </td>
+	   </td>
+	  <td valign='top' width='80%'>
