@@ -1,0 +1,204 @@
+Script started on Fri Dec  4 18:38:23 2009
+[bad@lord-unix /www/numbers.lord-unix/htdocs/alliance]$ ls -la
+total 58
+drwxr-xr-x  8 bad  wheel    512 Dec  4 18:38 .
+drwxr-xr-x  6 bad  wheel    512 Dec  4 18:07 ..
+-rw-r--r--  1 bad  wheel      0 Oct 31  2007 .htaccess
+-rw-r--r--  1 bad  wheel  29189 Jan 31  2008 admin.php
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 classes
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 images
+-rw-r--r--  1 bad  wheel   2012 Jun  3  2009 index.php
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 js
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 logs
+drwxr-xr-x  4 bad  wheel    512 Dec  2 19:45 report
+-rw-r--r--  1 bad  wheel      0 Dec 21  2007 robots.txt
+-rwxr--r--  1 bad  wheel    154 Dec  4 17:38 script.sh
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 templates
+-rw-r--r--  1 bad  wheel     43 Dec  4 18:38 typescript
+-rw-r--r--  1 bad  wheel   5332 Jan 31  2008 users.php
+[bad@lord-unix /www/numbers.lord-unix/htdocs/alliance]$ less typescript 
+[?1h=Script started on Fri Dec  4 18:38:23 2009
+[7mtypescript (END) [27m[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K [KESCESC[KOO[KAA[K...skipping...
+Script started on Fri Dec  4 18:38:23 2009
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[1m~[m
+[7m(END) [27m[K[K [KESCESC[KOO[KBB[K[K[7m(END) [27m[K[K[?1l>[bad@lord-unix /www/numbers.lord-unix/htdocs/alliance]$ less typescript [10Ps -la
+total 58
+drwxr-xr-x  8 bad  wheel    512 Dec  4 18:38 .
+drwxr-xr-x  6 bad  wheel    512 Dec  4 18:07 ..
+-rw-r--r--  1 bad  wheel      0 Oct 31  2007 .htaccess
+-rw-r--r--  1 bad  wheel  29189 Jan 31  2008 admin.php
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 classes
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 images
+-rw-r--r--  1 bad  wheel   2012 Jun  3  2009 index.php
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 js
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 logs
+drwxr-xr-x  4 bad  wheel    512 Dec  2 19:45 report
+-rw-r--r--  1 bad  wheel      0 Dec 21  2007 robots.txt
+-rwxr--r--  1 bad  wheel    154 Dec  4 17:38 script.sh
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 templates
+-rw-r--r--  1 bad  wheel     43 Dec  4 18:38 typescript
+-rw-r--r--  1 bad  wheel   5332 Jan 31  2008 users.php
+[bad@lord-unix /www/numbers.lord-unix/htdocs/alliance]$ ls -la rt  report/
+total 8
+drwxr-xr-x  4 bad  wheel  512 Dec  2 19:45 .
+drwxr-xr-x  8 bad  wheel  512 Dec  4 18:38 ..
+drwxr-xr-x  2 bad  wheel  512 Dec  2 19:45 document
+drwxr-xr-x  2 bad  wheel  512 Dec  2 19:45 waybill
+[bad@lord-unix /www/numbers.lord-unix/htdocs/alliance]$ cd ../
+[bad@lord-unix /www/numbers.lord-unix/htdocs]$ rm repo    scri  ri       cd aal  lliance/
+[bad@lord-unix /www/numbers.lord-unix/htdocs/alliance]$ rm script.sh 
+[bad@lord-unix /www/numbers.lord-unix/htdocs/alliance]$ ls -la
+total 58
+drwxr-xr-x  8 bad  wheel    512 Dec  4 18:39 .
+drwxr-xr-x  6 bad  wheel    512 Dec  4 18:07 ..
+-rw-r--r--  1 bad  wheel      0 Oct 31  2007 .htaccess
+-rw-r--r--  1 bad  wheel  29189 Jan 31  2008 admin.php
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 classes
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 images
+-rw-r--r--  1 bad  wheel   2012 Jun  3  2009 index.php
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 js
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 logs
+drwxr-xr-x  4 bad  wheel    512 Dec  2 19:45 report
+-rw-r--r--  1 bad  wheel      0 Dec 21  2007 robots.txt
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 templates
+-rw-r--r--  1 bad  wheel   3082 Dec  4 18:39 typescript
+-rw-r--r--  1 bad  wheel   5332 Jan 31  2008 users.php
+[bad@lord-unix /www/numbers.lord-unix/htdocs/alliance]$ less .htaccess 
+[?1h=[K[7m.htaccess (END) [27m[K[K[K[7m(END) [27m[K[K[?1l>[bad@lord-unix /www/numbers.lord-unix/htdocs/alliance]$ ch  chmod 77    7 rt  report/
+[bad@lord-unix /www/numbers.lord-unix/htdocs/alliance]$ chmod 777 report/document/
+[bad@lord-unix /www/numbers.lord-unix/htdocs/alliance]$ chmod 777 report/document/         waybill/
+[bad@lord-unix /www/numbers.lord-unix/htdocs/alliance]$ ls -la 
+total 60
+drwxr-xr-x  8 bad  wheel    512 Dec  4 18:39 .
+drwxr-xr-x  6 bad  wheel    512 Dec  4 18:07 ..
+-rw-r--r--  1 bad  wheel      0 Oct 31  2007 .htaccess
+-rw-r--r--  1 bad  wheel  29189 Jan 31  2008 admin.php
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 classes
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 images
+-rw-r--r--  1 bad  wheel   2012 Jun  3  2009 index.php
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 js
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 logs
+drwxrwxrwx  4 bad  wheel    512 Dec  2 19:45 report
+-rw-r--r--  1 bad  wheel      0 Dec 21  2007 robots.txt
+drwxr-xr-x  2 bad  wheel    512 Dec  2 19:45 templates
+-rw-r--r--  1 bad  wheel   4173 Dec  4 18:39 typescript
+-rw-r--r--  1 bad  wheel   5332 Jan 31  2008 users.php
+[bad@lord-unix /www/numbers.lord-unix/htdocs/alliance]$ ls -la /rescue/        report/
+total 8
+drwxrwxrwx  4 bad  wheel  512 Dec  2 19:45 .
+drwxr-xr-x  8 bad  wheel  512 Dec  4 18:39 ..
+drwxrwxrwx  2 bad  wheel  512 Dec  2 19:45 document
+drwxrwxrwx  2 bad  wheel  512 Dec  2 19:45 waybill
+[bad@lord-unix /www/numbers.lord-unix/htdocs/alliance]$ cmod     hmod o+w de  logs/delete.txt 
+[bad@lord-unix /www/numbers.lord-unix/htdocs/alliance]$ chmod o+w logs/delete.txt           eletewaybill.txt 
+[bad@lord-unix /www/numbers.lord-unix/htdocs/alliance]$ cd ../texkom/      exkom/
+[bad@lord-unix /www/numbers.lord-unix/htdocs/texkom]$ ls -la
+total 56
+drwxr-xr-x  8 bad  wheel    512 Dec  3 11:49 .
+drwxr-xr-x  6 bad  wheel    512 Dec  4 18:07 ..
+-rw-r--r--  1 bad  wheel     82 Dec  3 13:28 .htaccess
+-rw-r--r--  1 bad  wheel  29305 Dec  3 12:12 admin.php
+drwxr-xr-x  2 bad  wheel    512 Dec  3 11:49 classes
+drwxr-xr-x  2 bad  wheel    512 Dec  3 11:49 images
+-rw-r--r--  1 bad  wheel   2025 Dec  3 12:12 index.php
+drwxr-xr-x  2 bad  wheel    512 Dec  3 11:49 js
+drwxr-xr-x  2 bad  wheel    512 Dec  3 11:49 logs
+drwxrwxrwx  4 bad  wheel    512 Dec  3 11:49 report
+-rw-r--r--  1 bad  wheel      0 Feb 14  2008 robots.txt
+drwxr-xr-x  2 bad  wheel    512 Dec  3 11:49 templates
+-rw-r--r--  1 bad  wheel   5410 Dec  3 12:12 users.php
+[bad@lord-unix /www/numbers.lord-unix/htdocs/texkom]$ cd ../all   avto/
+[bad@lord-unix /www/numbers.lord-unix/htdocs/avto]$ cd ../avto/[5Pls -lacd ../texkom/hmod o+w logs/deletewaybill.txt [7P.txt [12Pls -la report/[Kchmod 777 report/waybill/ls -la [Kreport/[Kchmod 777 report/waybill/[4hd[4locument/[K
+[bad@lord-unix /www/numbers.lord-unix/htdocs/avto]$ chmod 777 report/[6Pd ../avto/[5Pls -lacd ../texkom/hmod o+w logs/deletewaybill.txt [7P.txt [12Pls -la report/[Kchmod 777 report/waybill/
+[bad@lord-unix /www/numbers.lord-unix/htdocs/avto]$ chmod 777 report/waybill/[K[6Pd ../avto/[5Pls -lacd ../texkom/hmod o+w logs/deletewaybill.txt 
+[bad@lord-unix /www/numbers.lord-unix/htdocs/avto]$ chmod o+w logs/deletewaybill.txt [8P777 report/waybill/[Kwaybill/o+w logs/deletewaybill.txt [8P777 report/waybill/[K[6Pd ../avto/[5Pls -lacd ../texkom/hmod o+w logs/deletewaybill.txt [7P.txt [12Pls -la report/[Kchmod 777 report/waybill/[4hd[4locument/
+[bad@lord-unix /www/numbers.lord-unix/htdocs/avto]$ chmod 777 report/document/o+w logs/deletewaybill.txt [8P777 report/waybill/o+w logs/deletewaybill.txt [8P777 report/waybill/[K[6Pd ../avto/[4hhmod 7[4l77 report/waybill/[K[6Pd ../avto/[5Pls -lacd ../texkom/hmod o+w logs/deletewaybill.txt [7P.txt 
+[bad@lord-unix /www/numbers.lord-unix/htdocs/avto]$ cd ../arsenal/
+[bad@lord-unix /www/numbers.lord-unix/htdocs/arsenal]$ ls-l     -la
+total 54
+drwxr-xr-x  8 bad  wheel    512 Dec  3 11:49 .
+drwxr-xr-x  6 bad  wheel    512 Dec  4 18:07 ..
+-rw-r--r--  1 bad  wheel      0 Feb 14  2008 .htaccess
+-rw-r--r--  1 bad  wheel  29322 Dec  3 12:04 admin.php
+drwxr-xr-x  2 bad  wheel    512 Dec  3 11:49 classes
+drwxr-xr-x  2 bad  wheel    512 Dec  3 11:49 images
+-rw-r--r--  1 bad  wheel   2027 Dec  3 12:04 index.php
+drwxr-xr-x  2 bad  wheel    512 Dec  3 11:49 js
+drwxr-xr-x  2 bad  wheel    512 Dec  3 11:49 logs
+drwxr-xr-x  4 bad  wheel    512 Dec  3 11:49 report
+-rw-r--r--  1 bad  wheel      0 Feb 14  2008 robots.txt
+drwxr-xr-x  2 bad  wheel    512 Dec  3 11:49 templates
+-rw-r--r--  1 bad  wheel   5423 Dec  3 12:03 users.php
+[bad@lord-unix /www/numbers.lord-unix/htdocs/arsenal]$ ls -lacd ../arsenal/hmod o+w logs/delete.txt 777 report/document/o+w logs/deletewaybill.txt [8P777 report/waybill/[K[6Pd ../avto/[4hhmod 7[4l77 report/
+[bad@lord-unix /www/numbers.lord-unix/htdocs/arsenal]$ chmod 777 report/[11Pls -lacd ../arsenal/hmod o+w logs/delete.txt 777 report/document/o+w logs/deletewaybill.txt [8P777 report/waybill/
+[bad@lord-unix /www/numbers.lord-unix/htdocs/arsenal]$ chmod 777 report/waybill/[K[11Pls -lacd ../arsenal/hmod o+w logs/delete.txt 777 report/document/o+w logs/deletewaybill.txt [8P777 report/waybill/[K[6Pd ../avto/[5Pls -lacd ../texkom/hmod o+w logs/deletewaybill.txt [7P.txt [12Pls -la report/[Kchmod 777 report/waybill/[4hd[4locument/[Kdocument/
+[bad@lord-unix /www/numbers.lord-unix/htdocs/arsenal]$ chmod 777 report/document/[1Pwaybill/[Kwaybill/[4hd[4locument/[Kchmod 777 report/document/[1Pwaybill/[K[11Pls -lacd ../arsenal/hmod o+w logs/delete.txt 
+[bad@lord-unix /www/numbers.lord-unix/htdocs/arsenal]$ chmod o+w logs/delete.txt 777 report/document/[1Pwaybill/[K[11Pls -lacd ../arsenal/hmod o+w logs/delete.txt 777 report/document/o+w logs/deletewaybill.txt 
+[bad@lord-unix /www/numbers.lord-unix/htdocs/arsenal]$ ls -la
+total 54
+drwxr-xr-x  8 bad  wheel    512 Dec  3 11:49 .
+drwxr-xr-x  6 bad  wheel    512 Dec  4 18:07 ..
+-rw-r--r--  1 bad  wheel      0 Feb 14  2008 .htaccess
+-rw-r--r--  1 bad  wheel  29322 Dec  3 12:04 admin.php
+drwxr-xr-x  2 bad  wheel    512 Dec  3 11:49 classes
+drwxr-xr-x  2 bad  wheel    512 Dec  3 11:49 images
+-rw-r--r--  1 bad  wheel   2027 Dec  3 12:04 index.php
+drwxr-xr-x  2 bad  wheel    512 Dec  3 11:49 js
+drwxr-xr-x  2 bad  wheel    512 Dec  3 11:49 logs
+drwxrwxrwx  4 bad  wheel    512 Dec  3 11:49 report
+-rw-r--r--  1 bad  wheel      0 Feb 14  2008 robots.txt
+drwxr-xr-x  2 bad  wheel    512 Dec  3 11:49 templates
+-rw-r--r--  1 bad  wheel   5423 Dec  3 12:03 users.php
+[bad@lord-unix /www/numbers.lord-unix/htdocs/arsenal]$ exit
+
+Script done on Fri Dec  4 18:47:58 2009
